@@ -1,0 +1,398 @@
+body {
+    display: block;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+header img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+#text {
+    color: rgba(254, 254, 254, 0.808);
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    border-top: thick double #32a1ce;
+    width: 100%;
+    background-color: white;
+}
+
+.fit {
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+.fit h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutme img {
+    border-radius: 50%;
+    width: 25%;
+    height: auto;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.aboutme p {
+    width: 65%;
+    font-size: 15px;
+    font-weight: 300;
+    margin: auto 0;
+}
+
+.subedu {
+    border-radius: 20px;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    height: 15em;
+    margin: 30px 0;
+}
+
+.subedu img {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.edufont {
+    margin: 20px;
+}
+
+.edufont p:nth-of-type(1) {
+    font-size: 12px;
+}
+
+.edufont p:nth-of-type(2) {
+    margin-block-start: 0;
+    margin-top: none;
+    font-size: 22px;
+}
+
+.edufont p:nth-of-type(3) {
+
+    font-size: 14px;
+}
+
+.mainintern {
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.mainintern::after {
+    display: block;
+    content: "";
+    width: 30%;
+}
+
+.subintern {
+    margin: 20px 0;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.subintern img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 10% auto;
+    width: 50%;
+}
+
+.internfont {
+    margin: 15px;
+}
+
+.internfont p:nth-of-type(1) {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.internfont p:nth-of-type(2) {
+    font-size: 8px;
+}
+
+.internfont p:nth-of-type(3) {
+    font-size: 12px;
+}
+
+.workstop {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.workstop img {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+    margin: auto 0;
+}
+
+.workstop p {
+    font-size: 14px;
+    margin: auto 0;
+    padding-left: 10px;
+    border-radius: 20px;
+    color: black;
+}
+
+.workscontent {
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.workscontent::after {
+    display: block;
+    content: "";
+    width: 30%;
+}
+
+.workscontent iframe {
+    width: 30%;
+}
+
+.worksbox {
+    width: 30%;
+    height: 150px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    position: relative;
+}
+
+.worksbox img {
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 90%;
+}
+
+.workshover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: black;
+    z-index: 100;
+    display: none;
+    font-weight: 200;
+    font-size: 10px;
+
+}
+
+.worksbox:hover .workshover {
+    display: block;
+    backdrop-filter: blur(8px);
+}
+
+.sns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact a {
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: black;
+    border: solid 0.5px black;
+}
+
+.sns a img {
+    height: 30px;
+    width: 30px;
+}
+
+.sns a:nth-of-type(2) {
+    margin: 0 50px;
+}
+
+.footer {
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer div {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    header img {
+        object-fit: cover;
+        width: 100%;
+        height: 150px;
+    }
+
+    .fit {
+        margin: 0 15px;
+    }
+
+    #text {
+        font-size: 0.8em;
+    }
+
+    .aboutme {
+        display: block;
+    }
+
+    .aboutme img {
+        object-fit: contain;
+        display: block;
+        margin: 10% auto;
+        width: 60%;
+    }
+
+    .aboutme p {
+        width: 100%;
+        font: 10px;
+    }
+
+    .edufont {
+        margin: 10px;
+    }
+
+    .subedu {
+        display: block;
+        height: 17em;
+    }
+
+    .subedu img {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 20px;
+        width: 100%;
+        height: 35%;
+        object-fit: cover;
+    }
+
+
+    .edufont p:nth-of-type(1) {
+        font-size: 8px;
+    }
+
+    .edufont p:nth-of-type(2) {
+        margin-block-start: 0;
+        margin-top: none;
+        font-size: 16px;
+    }
+
+    .edufont p:nth-of-type(3) {
+        font-size: 10px;
+    }
+
+    .mainintern {
+        display: block;
+    }
+
+    .subintern {
+        width: 100%;
+    }
+
+    .subintern img {
+        margin: 5% auto;
+        padding-top: 10px;
+    }
+
+    .internfont {
+        margin: 10px;
+        padding-bottom: 10px;
+    }
+
+    .internfont p:nth-of-type(1) {
+        font-size: 16px;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    .internfont p:nth-of-type(2) {
+        font-size: 6px;
+    }
+
+    .internfont p:nth-of-type(3) {
+        font-size: 10px;
+    }
+
+    .workscontent {
+        display: block;
+    }
+
+    .worksbox {
+        margin: 20px 0;
+        width: 100%;
+        height: 100px;
+    }
+
+
+    .workscontent iframe {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer {
+        padding: 15px;
+        display: block;
+    }
+
+    .footer div {
+        width: 100%;
+    }
+
+    .contact p {
+        font-size: 12px;
+    }
+
+    .contact a {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    .sns {
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .fit h2 {
+        font-size: 1.5em;
+    }
+
+
+}
